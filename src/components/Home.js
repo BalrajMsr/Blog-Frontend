@@ -19,11 +19,11 @@ function SignInPage() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\\.,;:\s@\"]+\.)+[^<>()[\]\\.,;:\s@\"]{2,})$/;
-        if (!emailRegex.test(email)) {
-            setEmailError("Invalid email address.");
-            return;
-        }
+        // const emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\\.,;:\s@\"]+\.)+[^<>()[\]\\.,;:\s@\"]{2,})$/;
+        // if (!emailRegex.test(email)) {
+        //     setEmailError("Invalid email address.");
+        //     return;
+        // }
 
         if (!password.match(/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/)) {
             setPasswordError("Password must contain at least 1 uppercase, 1 lowercase, 1 digit, and 1 special.");
